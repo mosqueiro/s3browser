@@ -5,7 +5,7 @@
 
 A Web GUI written in Go to manage S3 buckets from any provider.
 
-![Screenshot](https://raw.githubusercontent.com/mosqueiro/s3browser/main/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/mosqueiro/s3browser/main/screenshot.png?version=2)
 
 ## Features
 
