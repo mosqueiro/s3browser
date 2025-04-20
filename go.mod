@@ -3,7 +3,7 @@ module github.com/mosqueiro/s3browser
 go 1.24.1
 
 require (
-	github.com/mosqueiro/adapters v0.0.0-20250326105956-e2708872d0ce
+	github.com/cloudlena/adapters v0.0.0-20250326105956-e2708872d0ce
 	github.com/gorilla/mux v1.8.1
 	github.com/matryer/is v1.4.1
 	github.com/minio/minio-go/v7 v7.0.88

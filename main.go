@@ -10,7 +10,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/mosqueiro/adapters/logging"
+	"github.com/cloudlena/adapters/logging"
 	"github.com/mosqueiro/s3browser/internal/app/s3browser"
 	"github.com/gorilla/mux"
 	"github.com/minio/minio-go/v7"
