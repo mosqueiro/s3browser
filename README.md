@@ -1,4 +1,4 @@
-# S3 Manager
+# iEGUER S3 Browser
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/mosqueiro/s3browser)](https://goreportcard.com/report/github.com/mosqueiro/s3browser)
 [![Build Status](https://github.com/mosqueiro/s3browser/actions/workflows/main.yml/badge.svg)](https://github.com/mosqueiro/s3browser/actions)
@@ -46,11 +46,11 @@ The application can be configured with the following environment variables:
 
 ### Run Container image
 
-1. Run `docker run -p 8080:8080 -e 'ACCESS_KEY_ID=XXX' -e 'SECRET_ACCESS_KEY=xxx' mosqueiro/s3browser`
+1. Run `docker run -p 8080:8080 -e 'ENDPOINT=XXX' -e 'ACCESS_KEY_ID=XXX' -e 'SECRET_ACCESS_KEY=xxx' mosqueiro/s3browser`
 
 ### Deploy to Kubernetes
 
-You can deploy S3 Manager to a Kubernetes cluster using the [Helm chart](https://github.com/sergeyshevch/s3browser-helm).
+You can deploy iEGUER S3 Browser to a Kubernetes cluster using the [Helm chart](https://github.com/sergeyshevch/s3browser-helm).
 
 ## Development
 
@@ -70,7 +70,7 @@ The image is available on [Docker Hub](https://hub.docker.com/r/mosqueiro/s3brow
 
 ### Run Locally for Testing
 
-There is an example [docker-compose.yml](https://github.com/mosqueiro/s3browser/blob/main/docker-compose.yml) file that spins up a S3 service and the S3 Manager. You can try it by issuing the following command:
+There is an example [docker-compose.yml](https://github.com/mosqueiro/s3browser/blob/main/docker-compose.yml) file that spins up a S3 service and the iEGUER S3 Browser. You can try it by issuing the following command:
 
 ```shell
 $ docker-compose up
