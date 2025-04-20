@@ -1,0 +1,25 @@
+services:
+  s3browser:
+    container_name: s3browser
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - ENDPOINT=s3:9000
+      - ACCESS_KEY_ID=s3browser
+      - SECRET_ACCESS_KEY=s3browser
+      - USE_SSL=false
+    depends_on:
+      - s3
+  s3:
+    container_name: s3
+    image: docker.io/minio/minio
+    command: server /data
+    ports:
+      - 9000:9000
+      - 9001:9001
+    environment:
+      - MINIO_ACCESS_KEY=s3browser
+      - MINIO_SECRET_KEY=s3browser
+      - MINIO_ADDRESS=0.0.0.0:9000
+      - MINIO_CONSOLE_ADDRESS=0.0.0.0:9001
